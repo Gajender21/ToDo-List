@@ -1,0 +1,40 @@
+<%- include("header.ejs") %>
+
+    <div class="container">
+        <h1>Work List</h1>
+        <div class="form">
+            <form action="/listaddwork" method="post">
+               
+                  <ul>  
+                    <% if(locals.a1){ %>
+                        <li class="input">
+                            <input class="textinput" type="text" name="textinput" id="" required>
+                        </li>
+                    <% } else{%>
+
+                    <li class="input">
+                        <input class="textinput" type="text" name="textinput" id="" required>
+                    </li>
+                    <% } %>
+
+                  <% if(locals.a1){ %>
+                    <% for(var i=0;i<a1.length;i++) {%>
+                    <li class="input done">
+                    <input class="checkbox" type="checkbox" name="" id="" >
+                        <div type="text" class="textinput"> <%= a1[i] %></div>
+                    <% } %>
+                    <% } %>
+
+              
+            </ul>
+                <div class="formfooter">
+                    <h2>New Item</h2>
+                    <button id="add" name="submitButton" value="add" type="submit"><i class="fa-solid fa-plus"></i></button>
+                              
+                </div>
+            </form>
+           
+            
+        </div>
+    </div>
+<%- include("footer.ejs") %>

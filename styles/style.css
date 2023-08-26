@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    background-image: url('/pngwing.com.png');
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.navbar{
+    width: 100vw;
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    gap: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: purple;
+    font-family: "Gluten";
+}
+
+.navbar a:hover{
+    color: plum;
+}
+.container{
+    padding: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    padding: 5px 50px;
+    border-radius: 5px;
+    background-color: rgb(160, 69, 191);
+    color: aliceblue;
+    font-family: 'Berkshire Swash';
+    box-shadow: 2px 5px 6px gray;
+}
+.form{
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px gray;
+}
+
+form .input{
+    border-bottom: 1px solid gainsboro;
+}
+
+form .textinput{
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    border-style: none;
+    font-family: "Dancing Script";
+
+}
+
+.checkbox{
+    margin-right: 20px;
+}
+.formfooter{
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+.formfooter h2{
+    color: #8e83835d;
+    font-family: "Dancing Script";
+
+}
+.formfooter #add{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add i{
+    color: white;
+    font-size: 20px;
+}
+button {
+    border: none;
+}
+#add:hover{
+    background-color: purple;
+}
+.done {
+    display: flex;
+    gap: 20px;
+    
+}
+
+input:checked + div{
+    text-decoration: line-through;
+}
